@@ -1,11 +1,14 @@
 .header {
   height: 60px;
   display: flex;
-  align-items: center;
-  background-color: #131921;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  flex-direction: column;
+
+  background-color: gainsboro;
+}
+.navbar {
+  display: flex;
+
+  background-color: gainsboro;
 }
 
 .header__logo {
@@ -27,7 +30,7 @@
 
 .header__search {
   display: flex;
-  flex: 1;
+  flex: 0.5;
   align-items: center;
   border-radius: 24px;
   margin: 0 10px;
@@ -43,7 +46,7 @@
 .header__searchIcon {
   padding: 5px;
   height: 22px !important;
-  background-color: #ff9f00;
+  background-color: white;
 }
 
 .header__nav {
@@ -57,23 +60,6 @@
   margin-left: 10px;
   margin-right: 10px;
   color: white;
-}
-
-.nav__itemLineOne {
-  font-size: 10px;
-}
-
-.nav__itemLineTwo {
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.nav__itemBasket {
-  display: flex;
-  align-items: center;
-  color: white;
-  margin-right: 50px;
-  margin-left: 10px;
 }
 
 .nav__basketCount {

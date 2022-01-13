@@ -9,18 +9,15 @@ const Checkout = () => {
   return (
     <div className="checkout">
       <div className="chechout__left">
-        <img src="ad.png" alt="name" className="checkout__ad" />
         <div>
-          <h2 className="checkout__title">Your Shopping Basket</h2>
           {basket.map((item) => {
-            const { id, title, image, price, rating } = item;
+            const { id, title, image, price } = item;
             return (
               <CheckoutProduct
                 id={id}
                 title={title}
                 image={image}
                 price={price}
-                rating={rating}
               />
             );
           })}

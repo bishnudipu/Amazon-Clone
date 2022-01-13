@@ -25,15 +25,8 @@ const Product = ({ id, title, price, image, rating }) => {
           <small> </small>
           <strong>{price} </strong>
         </p>
-        <div className="product__rating">
-          {Array(rating)
-            .fill()
-            .map((_, i) => (
-              <p>🌟</p>
-            ))}
-        </div>
       </div>
-      <img src={image} alt="imag" />
+      <img src={image} alt="name" />
       <button onClick={addToBasket}>Add to basket</button>
     </div>
   );
